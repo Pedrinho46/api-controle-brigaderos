@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { PeopleService } from './people.service';
 
 
-@Controller('people')
+@Controller('api/v1/people')
 export class PeopleController {
   constructor(private readonly peopleService: PeopleService) {}
 

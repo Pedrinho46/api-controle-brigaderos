@@ -7,6 +7,7 @@ export const IngredientSchema = new mongoose.Schema(
     quantidade_comprada: { type: Number, required: true },
     unidade: { type: String, required: true },
     data_compra: { type: Date, default: Date.now },
+    marca : { type: String, required: true },
   },
   { timestamps: true, collection: 'ingredientes' },
 );
